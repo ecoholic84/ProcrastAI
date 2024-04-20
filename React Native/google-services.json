@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "829472754072",
+    "project_id": "procastai",
+    "storage_bucket": "procastai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829472754072:android:4bfa6b8f1dd9f93159c3ed",
+        "android_client_info": {
+          "package_name": "com.nividaCorps.ProcastAI"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe-LyCvzuXIWQaHcis5T8oMnZiSDnOcs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

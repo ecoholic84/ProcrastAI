@@ -21,7 +21,7 @@ export default function Auth() {
             <View flex center>
                 <View row marginTop={100}>
                     <Text textC1 text30BO>ProcastAI</Text>
-                    <Text textC1 text10BO marginTop={-27}>.</Text>
+                    <Text textC1 text10BO marginTop={-24}>.</Text>
                 </View>
             </View>
             <View center height={100}>

@@ -1,6 +1,6 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../hooks";
 import Toast from "react-native-toast-message";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 function generateRandomEmail() {
     const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
@@ -27,7 +27,8 @@ export const createAccount = async() => {
         const email = generateRandomEmail();
         const passwd = generateRandomPassword(32);
         await createUserWithEmailAndPassword(auth, email, passwd);
-    }catch{
+    }catch(e){
+        console.log(e);
         Toast.show({ text1: 'Error creating account' });
     }
 };

@@ -20,7 +20,7 @@ export default {
             policy: "sdkVersion"
         },
         orientation: "portrait",
-        userInterfaceStyle: "dark",
+        userInterfaceStyle: "light",
         platforms: [
             "ios",
             "android"
@@ -28,12 +28,12 @@ export default {
         splash: {
             image: "./assets/splash.png",
             resizeMode: "contain",
-            backgroundColor: "#000000"
+            backgroundColor: "#FFFFFF"
         },
         notification: {
-            icon: "./assets/notification.png",
+            icon: "./assets/icon.png",
             androidMode: "collapse",
-            androidCollapsedTitle: "NoteGPT",
+            androidCollapsedTitle: "ProcastAI",
             color: "#FFFFFF"
         },
         assetBundlePatterns: [
@@ -41,9 +41,9 @@ export default {
         ],
         ios: {
             icon: "./assets/icon.png",
-            bundleIdentifier: "com.aixinc.notegpt",
+            bundleIdentifier: "com.nividaCorps.ProcastAI",
             buildNumber: "1", //increment in every ios release
-            backgroundColor: "#000000",
+            backgroundColor: "#FFFFFF",
             supportsTablet: false,
             googleServicesFile: GOOGLE_SERVICES_INFO,
             config: {
@@ -56,12 +56,12 @@ export default {
             infoPlist: {},
         },
         android: {
-            package: "com.aixinc.notegpt",
-            backgroundColor: "#000000",
+            package: "com.nividaCorps.ProcastAI",
+            backgroundColor: "#FFFFFF",
             versionCode: 1, //increment in every android release
             adaptiveIcon: {
                 foregroundImage: "./assets/adaptive-icon.png",
-                backgroundColor: "#000000"
+                backgroundColor: "#FFFFFF"
             },
             googleServicesFile: GOOGLE_SERVICES_JSON,
             permissions: [
@@ -77,12 +77,12 @@ export default {
                     data: [
                         {
                             scheme: "https",
-                            host: "notegpt.com",
+                            host: "procastai.com",
                             pathPrefix: "/"
                         },
                         {
                             scheme: "http",
-                            host: "notegpt.com",
+                            host: "procastai.com",
                             pathPrefix: "/"
                         }
                     ],
@@ -91,12 +91,6 @@ export default {
             ]
         },
         plugins: [
-            [
-                "expo-document-picker",
-                {
-                    iCloudContainerEnvironment: "Production"
-                }
-            ],
             [
                 "expo-build-properties",
                 {
@@ -115,18 +109,10 @@ export default {
                     }
                 }
             ],
-            [
-                "expo-media-library",
-                {
-                    photosPermission: "Allow NoteGPT to access your gallery to add photos to your notes.",
-                    savePhotosPermission: "Allow NoteGPT to save photos to your device.",
-                    isAccessMediaLocationEnabled: false
-                }
-            ],
         ],
         extra: {
             eas: {
-                projectId: "c88aaa6e-79c0-4121-a3be-2341228d3156"
+                projectId: "3f81e6cb-50ad-4f30-9713-efb05ad31f0d"
             },
             FIREBASE_API_KEY: FIREBASE_API_KEY,
             AUTH_DOMAIN: AUTH_DOMAIN,
@@ -136,6 +122,6 @@ export default {
             APP_ID: APP_ID,
             MEASUREMENT_ID: MEASUREMENT_ID,
         },
-        owner: "aixinc"
+        owner: "nivida_corps"
     }
 };

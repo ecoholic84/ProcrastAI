@@ -25,7 +25,7 @@ export default function Auth() {
                 </View>
             </View>
             <View center height={100}>
-                <TouchableOpacity onPress={handleAuth}>
+                <TouchableOpacity disabled={loading} onPress={handleAuth}>
                     <View bg-textC1 br60 center width={width*0.83} height={54}>
                         <Text text60 bg1>Get started</Text>
                         {loading?

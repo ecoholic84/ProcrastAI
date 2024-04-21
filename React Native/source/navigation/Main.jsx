@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home } from '../screens';
+import { Home, CreateTask } from '../screens';
 import { TransitionPresets, createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
@@ -17,6 +17,7 @@ export default function Main() {
 
         <Stack.Navigator initialRouteName='HomeScreen' screenOptions={screenOptions}>
             <Stack.Screen name="HomeScreen" component={Home}/>
+            <Stack.Screen name="CreateTask" component={CreateTask} options={{...TransitionPresets.ModalPresentationIOS}}/>
         </Stack.Navigator>
 
     );
